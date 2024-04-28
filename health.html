@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Container with Navigation Bar</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+    /* Custom styles for the footer */
+    footer {
+      background-color: #b0c9e2;
+      padding: 50px 0;
+    }
+    .footer-content {
+      color: #333;
+    }
+    .footer-heading {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .footer-column p {
+      margin-bottom: 20px;
+    }
+      /* .navbar-color {
+        background-color: #486b8f;
+      } */
+
+      .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+    .navbar-nav .nav-link {
+      font-size: 18px;
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #97c9ff; /* Change color on hover */
+    }
+    .navbar {
+      background: linear-gradient(to right, #b9d6f4, #00bfff); /* Gradient background */
+    }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-color">
+      <div class="container">
+        <a class="navbar-brand" href="#">Your Website</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+             Add more nav items as needed 
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Your Brand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-home mr-1"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"><i class="fas fa-info-circle mr-1"></i>About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html"><i class="fas fa-briefcase mr-1"></i>Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><i class="fas fa-envelope mr-1"></i>Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    <!-- Container -->
+    <!-- Container with Photo and Details -->
+    <section class="banner">
+      <div class="banner-image position-relative">
+        <img
+          src="./assests/caregiver.jpg"
+          alt="Care Giver Banner"
+          width="100%"
+          class="img-fluid"
+        />
+      </div>
+
+      <div class="container">
+        <div class="banner-info">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="banner-text p-5 text-black bg-transparent mt-5">
+                <h1>Home Caretaker Services in Hyderabad</h1>
+
+                <p>
+                  Do your parents need to be looked after 24*7? Is a member of
+                  your family or a senior citizen afflicted with a chronic
+                  illness or has recently had surgery? If that's the case, be
+                  sure to contact our home health care services in Hyderabad as
+                  soon as possible to ensure that your loved one is well taken
+                  care of at home.
+                </p>
+              </div>
+            </div>
+
+            <!-- <form id="contactForm"> -->
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+              <div class="container">
+                <div></div>
+                <h1>Submit your details</h1>
+                <form id="contactForm">
+                  <div class="form-group">
+                    <label for="name" id="name">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="phoneNumber" id="phno">Phone Number</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phoneNumber"
+                      placeholder="Enter your phone number"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="details" id="details">Additional Details</label>
+                    <textarea
+                      class="form-control"
+                      id="details"
+                      rows="3"
+                      placeholder="Enter any additional details"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          <!-- </form> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-info mt-5 pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="shadow-lg p-4">
+              <div
+                class="panel-group"
+                id="accordion"
+                role="tablist"
+                aria-multiselectable="true"
+              >
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h2 class="panel-title" style="font-size: 16px">
+                      <a
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        What is a Home Caretaker Service?
+                      </a>
+                    </h2>
+                  </div>
+
+                  <div
+                    id="collapseOne"
+                    class="panel-collapse collapse in show"
+                    role="tabpanel"
+                    aria-labelledby="headingOne"
+                  >
+                    <div class="panel-body">
+                      <p>
+                        A home caretaker service provides full help in the
+                        comfort of one's own home. If your seniors are unable to
+                        care for themselves, trained attendants, also known as
+                        caretakers, look after their everyday routines. They're
+                        also taught to measure vital signs like blood pressure
+                        and heart rate to keep track of their overall health,
+                        making us the Best Home Care Services in Hyderabad.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h3 class="panel-title" style="font-size: 16px">
+                      <a
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        aria-expanded="true"
+                        aria-controls="collapseTwo"
+                      >
+                        When do you need a home caretaker service in Hyderabad?
+                      </a>
+                    </h3>
+                  </div>
+
+                  <div
+                    id="collapseTwo"
+                    class="panel-collapse collapse show"
+                    role="tabpanel"
+                    aria-labelledby="headingTwo"
+                  >
+                    <div class="panel-body">
+                      <ul>
+                        <li>
+                          <b>ElderCare</b>
+
+                          If your older loved one requires assistance with daily
+                          chores, we will deliver the care and compassion they
+                          deserve.
+                        </li>
+
+                        <li>
+                          <b>Health and Lifestyle Management</b>
+
+                          Let's say you have a family member who requires
+                          regular monitoring or assistance in traveling around.
+                          In that situation, home health care services are
+                          exactly what you need.
+                        </li>
+
+                        <li>
+                          <b>Post Operative Support</b>
+
+                          Caring for someone who has recently undergone surgery
+                          can be tough for a family. A competent in-home
+                          caregiver can help the family by keeping track of the
+                          patient's vital signs and offering support.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                      <a
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        aria-expanded="true"
+                        aria-controls="collapseThree"
+                      >
+                        How do Anvayaa caretaker services help the senior
+                        citizens in Hyderabad?
+                      </a>
+                    </h4>
+                  </div>
+
+                  <div
+                    id="collapseThree"
+                    class="panel-collapse collapse show"
+                    role="tabpanel"
+                    aria-labelledby="headingThree"
+                  >
+                    <div class="panel-body">
+                      <p>
+                        Our Senior Home Care Services and caregivers help those
+                        in need in the privacy of their own homes. They could
+                        help with grooming, food, movement, oral medicine,
+                        vitals monitoring, and a variety of other chores. You
+                        can engage our caregivers based on your requirements.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="mt-4">
+              <div class="social shadow-lg p-4">
+                <div class="fb">
+                  <i class="fa1 fa fa-facebook facebook"></i> &nbsp; 4.8 /5
+                  <p>100 Facebook Reviews</p>
+                </div>
+                <hr />
+                <div class="google1">
+                  <i class="fa1 fa fa-google google"></i>&nbsp; 4.8 /5
+                  <p>100 Google Reviews</p>
+                </div>
+              </div>
+
+              <!-- <div class="other-cities shadow-lg p-4 mt-4">
+                <h4>Doctor On-Call Service in Other Cities</h4>
+                <div class="pt-3">
+                  <p>
+                    <a
+                      href="https://www.anvayaa.com/locations/chennai/doctor-on-call/"
+                      >Chennai</a
+                    >
+                  </p>
+                  <hr />
+                  <p>
+                    <a
+                      href="https://www.anvayaa.com/locations/mumbai/doctor-on-call/"
+                      >Mumbai</a
+                    >
+                  </p>
+                  <hr />
+                  <p>
+                    <a
+                      href="https://www.anvayaa.com/locations/bangalore/doctor-on-call/"
+                      >Bangalore</a
+                    >
+                  </p>
+                  <hr />
+                  <p>
+                    <a
+                      href="https://www.anvayaa.com/locations/visakhapatnam/doctor-on-call"
+                      >Visakhapatnam</a
+                    >
+                  </p>
+                  <hr />
+                  <p>
+                    <a
+                      href="https://www.anvayaa.com/locations/coimbatore/doctor-on-call"
+                      >Coimbatore</a
+                    >
+                  </p>
+                  <hr />
+                </div>
+              </div> -->
+              <div class="other-services shadow-lg p-4 mt-4">
+                <h4>Other Services</h4>
+                <div class="pt-3">
+                  <p>
+                    <span
+                      ><img
+                        src="../images/doctor-on-call.png"
+                        class="img-fluid"
+                        width="20%" /></span
+                    ><a
+                      href="https://www.anvayaa.com/locations/hyderabad/doctor-on-call/"
+                      >Doctor On-Call</a
+                    >
+                  </p>
+                  <hr />
+                  <p>
+                    <a
+                      href="https://www.anvayaa.com/locations/hyderabad/home-care-services"
+                      ><span
+                        ><img
+                          src="../images/senior-home-health-care-services.png"
+                          class="img-fluid"
+                          width="20%" /></span
+                      >Senior Home Health Care Services</a
+                    >
+                  </p>
+                  <hr />
+                  <p>
+                    <span
+                      ><img
+                        src="../images/elder-care-services.png"
+                        class="img-fluid"
+                        width="20%" /></span
+                    ><a
+                      href="https://www.anvayaa.com/locations/hyderabad/elder-care-services"
+                      >Elder-care Services</a
+                    >
+                  </p>
+                  <hr />
+                  <p>
+                    <span
+                      ><img
+                        src="../images/physiotherapy.png"
+                        class="img-fluid"
+                        width="20%" /></span
+                    ><a
+                      href="https://www.anvayaa.com/locations/hyderabad/physiotherapy-at-home"
+                      >Physiotherapy</a
+                    >
+                  </p>
+                  <hr />
+                  <p>
+                    <span
+                      ><img
+                        src="../images/nurse-care-at-home.png"
+                        class="img-fluid"
+                        width="20%" /></span
+                    ><a
+                      href="https://www.anvayaa.com/locations/hyderabad/home-nursing-services"
+                      >Nurse Care At Home</a
+                    >
+                  </p>
+                  <hr />
+                  <p>
+                    <span
+                      ><img
+                        src="../images/post-operative-care.png"
+                        class="img-fluid"
+                        width="20%" /></span
+                    ><a
+                      href="https://www.anvayaa.com/locations/hyderabad/post-operative-care"
+                      >Post Operative Care</a
+                    >
+                  </p>
+                  <hr />
+                  <p>
+                    <span
+                      ><img
+                        src="../images/other-services.png"
+                        class="img-fluid"
+                        width="20%" /></span
+                    ><a
+                      href="https://www.anvayaa.com/locations/hyderabad/diagnostic"
+                      >Diagnostic Services</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="items-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Item 1</h5>
+                <p class="card-text">Details about item 1.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Item 2</h5>
+                <p class="card-text">Details about item 2.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Item 3</h5>
+                <p class="card-text">Details about item 3.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Item 4</h5>
+                <p class="card-text">Details about item 4.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Item 5</h5>
+                <p class="card-text">Details about item 5.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Item 6</h5>
+                <p class="card-text">Details about item 6.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container footer-content">
+        <div class="row">
+          <div class="col-md-4 footer-column">
+            <h5 class="footer-heading">Column 1</h5>
+            <p>This is the content of column 1.</p>
+          </div>
+          <div class="col-md-4 footer-column">
+            <h5 class="footer-heading">Column 2</h5>
+            <p>This is the content of column 2.</p>
+          </div>
+          <div class="col-md-4 footer-column">
+            <h5 class="footer-heading">Contact Details</h5>
+            <p>123 Street Name, City, Country</p>
+            <p>Email: example@example.com</p>
+            <p>Phone: +1234567890</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the form from submitting normally
+      
+          // Get form data
+          const formData = new FormData(this);
+      
+          // Convert form data to JSON object
+          const jsonObject = {};
+          formData.forEach((value, key) => {
+              jsonObject[key] = value;
+          });
+      
+          // Send POST request to Node.js server
+          fetch('http://localhost:3000/send_email', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(jsonObject)
+          })
+          .then(response => response.text())
+          .then(data => {
+              console.log(data); // Log response from server
+              alert(data); // Show response message
+          })
+          .catch(error => {
+              console.error('Error:', error);
+              alert('Failed to send email.'); // Show error message
+          });
+      });
+      </script>
+  </body>
+</html>

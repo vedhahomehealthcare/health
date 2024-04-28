@@ -1,0 +1,60 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore IDE files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore compiled Python bytecode
+__pycache__/
+
+# Ignore virtual environment
+venv/
+env/
+
+# Ignore compiled Java classes
+*.class
+
+# Ignore compiled C/C++ files
+*.o
+*.out
+
+# Ignore compiled binaries
+bin/
+dist/
+build/
+
+# Ignore log files
+*.log
+
+# Ignore sensitive or environment-specific configuration files
+.env
+
+# Ignore package-lock.json for npm
+package-lock.json
+
+# Ignore yarn lock file
+yarn.lock
+
+# Ignore any file with .bak extension
+*.bak
+
+# Ignore any file with .tmp extension
+*.tmp
+
+# Ignore any file with .zip extension
+*.zip
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+

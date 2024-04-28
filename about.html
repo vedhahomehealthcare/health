@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Left Photo, Right Details</title>
+<link
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+rel="stylesheet"
+/>
+<style>
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .photo {
+    flex: 1;
+    padding: 20px;
+  }
+  .details {
+    flex: 2;
+    padding: 20px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+    .navbar-nav .nav-link {
+      font-size: 18px;
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #97c9ff; /* Change color on hover */
+    }
+    .navbar {
+      background: linear-gradient(to right, #b9d6f4, #00bfff); /* Gradient background */
+    }
+    .detailone{
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Your Brand</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="health.html"><i class="fas fa-home mr-1"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"><i class="fas fa-info-circle mr-1"></i>About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html"><i class="fas fa-briefcase mr-1"></i>Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"><i class="fas fa-envelope mr-1"></i>Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<h1 class="detailone">Photo and Details</h1>
+
+<div class="container">
+  <div class="photo">
+    <img src="./assests/images.jpg" alt="Your Photo">
+  </div>
+  <div class="details">
+    <h2>Details</h2>
+    <p>This is where you can provide details about the photo or any other information you want to display.</p>
+  </div>
+</div>
+
+</body>
+</html>
