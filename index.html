@@ -4,56 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vedha Home Health Care</title>
-    <link rel="icon" type="image/png" href="/assests/ii.png">
+    <!-- <link rel="icon" type="image/png" href="/assests/ii.png" /> -->
     <!-- Include Bootstrap CSS -->
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <style>
-    /* Custom styles for the footer */
-    footer {
-      background-color: #b0c9e2;
-      padding: 50px 0;
-    }
-    .footer-content {
-      color: #333;
-    }
-    .footer-heading {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-    .footer-column p {
-      margin-bottom: 20px;
-    }
+      /* Custom styles for the footer */
+      footer {
+        background-color: #b0c9e2;
+        padding: 50px 0;
+      }
+      .footer-content {
+        color: #333;
+      }
+      .footer-heading {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .footer-column p {
+        margin-bottom: 20px;
+      }
       /* .navbar-color {
         background-color: #486b8f;
       } */
 
       .navbar-brand {
-      font-size: 24px;
-      font-weight: bold;
-      color: #fff;
-    }
-    .navbar-nav .nav-link {
-      font-size: 18px;
-      color: #fff;
-      transition: all 0.3s ease;
-    }
-    .navbar-nav .nav-link:hover {
-      color: #97c9ff; /* Change color on hover */
-    }
-    .navbar {
-      background: linear-gradient(to right, #b9d6f4, #00bfff); /* Gradient background */
-    }
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+      }
+      .navbar-nav .nav-link {
+        font-size: 18px;
+        color: #fff;
+        transition: all 0.3s ease;
+      }
+      .navbar-nav .nav-link:hover {
+        color: #97c9ff; /* Change color on hover */
+      }
+      .navbar {
+        background: linear-gradient(
+          to right,
+          #b9d6f4,
+          #00bfff
+        ); /* Gradient background */
+      }
+      .navbar-logo img {
+        height: 50px; /* Adjust height as needed */
+        width: auto; /* Maintain aspect ratio */
+      }
     </style>
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-color">
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="navbar-logo">
+        <img src="./assests/logo.png" alt="Logo" />
+      </div>
       <div class="container">
-        <a class="navbar-brand" href="#">Your Website</a>
+        <a class="navbar-brand" href="#">Vedha HomeHealth Care Service</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -66,59 +77,38 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+          <!-- <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
               <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
+                ><i class="fas fa-home mr-1"></i>Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="about.html"
+                ><i class="fas fa-info-circle mr-1"></i>About</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="services.html"
+                ><i class="fas fa-briefcase mr-1"></i>Services</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#footer"
+                ><i class="fas fa-envelope mr-1"></i>Contact</a
+              >
             </li>
-             Add more nav items as needed 
-          </ul>
-        </div>
-      </div>
-    </nav> -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">Your Brand</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-home mr-1"></i>Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html"><i class="fas fa-info-circle mr-1"></i>About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html"><i class="fas fa-briefcase mr-1"></i>Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html"><i class="fas fa-envelope mr-1"></i>Contact</a>
-            </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </nav>
-    
 
     <!-- Container -->
     <!-- Container with Photo and Details -->
     <section class="banner">
       <div class="banner-image position-relative">
         <img
-          src="./assests/caregiver.jpg"
+          src="./assests/imgfont.png"
           alt="Care Giver Banner"
           width="100%"
           class="img-fluid"
@@ -181,7 +171,7 @@
                 </form>
               </div>
             </div>
-          <!-- </form> -->
+            <!-- </form> -->
           </div>
         </div>
       </div>
@@ -380,7 +370,7 @@
               <div class="other-services shadow-lg p-4 mt-4">
                 <h4>Other Services</h4>
                 <div class="pt-3">
-                  <p>
+                  <!-- <p>
                     <span
                       ><img
                         src="../images/doctor-on-call.png"
@@ -390,33 +380,23 @@
                       href="https://www.anvayaa.com/locations/hyderabad/doctor-on-call/"
                       >Doctor On-Call</a
                     >
-                  </p>
+                  </p> -->
                   <hr />
                   <p>
                     <a
                       href="https://www.anvayaa.com/locations/hyderabad/home-care-services"
-                      ><span
-                        ><img
-                          src="../images/senior-home-health-care-services.png"
-                          class="img-fluid"
-                          width="20%" /></span
                       >Senior Home Health Care Services</a
                     >
                   </p>
                   <hr />
                   <p>
-                    <span
-                      ><img
-                        src="../images/elder-care-services.png"
-                        class="img-fluid"
-                        width="20%" /></span
-                    ><a
+                    <a
                       href="https://www.anvayaa.com/locations/hyderabad/elder-care-services"
                       >Elder-care Services</a
                     >
                   </p>
                   <hr />
-                  <p>
+                  <!-- <p>
                     <span
                       ><img
                         src="../images/physiotherapy.png"
@@ -426,21 +406,16 @@
                       href="https://www.anvayaa.com/locations/hyderabad/physiotherapy-at-home"
                       >Physiotherapy</a
                     >
-                  </p>
-                  <hr />
+                  </p> -->
+                  <!-- <hr /> -->
                   <p>
-                    <span
-                      ><img
-                        src="../images/nurse-care-at-home.png"
-                        class="img-fluid"
-                        width="20%" /></span
-                    ><a
+                    <a
                       href="https://www.anvayaa.com/locations/hyderabad/home-nursing-services"
                       >Nurse Care At Home</a
                     >
                   </p>
-                  <hr />
-                  <p>
+                  <!-- <hr /> -->
+                  <!-- <p>
                     <span
                       ><img
                         src="../images/post-operative-care.png"
@@ -450,9 +425,9 @@
                       href="https://www.anvayaa.com/locations/hyderabad/post-operative-care"
                       >Post Operative Care</a
                     >
-                  </p>
+                  </p> -->
                   <hr />
-                  <p>
+                  <!-- <p>
                     <span
                       ><img
                         src="../images/other-services.png"
@@ -462,7 +437,7 @@
                       href="https://www.anvayaa.com/locations/hyderabad/diagnostic"
                       >Diagnostic Services</a
                     >
-                  </p>
+                  </p> -->
                 </div>
               </div>
             </div>
@@ -475,36 +450,52 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="card">
-              <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+              <img
+                src="./assests/pic1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
-                <h5 class="card-title">Item 1</h5>
-                <p class="card-text">Details about item 1.</p>
+                <h5 class="card-title">Home Care</h5>
+                <!-- <p class="card-text">Details about item 1.</p> -->
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="card">
-              <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+              <img
+                src="./assests/pic2.jpg"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
-                <h5 class="card-title">Item 2</h5>
-                <p class="card-text">Details about item 2.</p>
+                <h5 class="card-title">Health Care</h5>
+                <!-- <p class="card-text">Details about item 2.</p> -->
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="card">
-              <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+              <img
+                src="./assests/pic3.jpg"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
-                <h5 class="card-title">Item 3</h5>
-                <p class="card-text">Details about item 3.</p>
+                <h5 class="card-title">Old Age Caring Service</h5>
+                <!-- <p class="card-text">Details about item 3.</p> -->
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-sm-4">
             <div class="card">
-              <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+              <img
+                src="https://via.placeholder.com/150"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Item 4</h5>
                 <p class="card-text">Details about item 4.</p>
@@ -513,7 +504,11 @@
           </div>
           <div class="col-sm-4">
             <div class="card">
-              <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+              <img
+                src="https://via.placeholder.com/150"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Item 5</h5>
                 <p class="card-text">Details about item 5.</p>
@@ -522,71 +517,100 @@
           </div>
           <div class="col-sm-4">
             <div class="card">
-              <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+              <img
+                src="https://via.placeholder.com/150"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Item 6</h5>
                 <p class="card-text">Details about item 6.</p>
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
-    <footer>
+    <footer id="#footer">
       <div class="container footer-content">
         <div class="row">
           <div class="col-md-4 footer-column">
-            <h5 class="footer-heading">Column 1</h5>
-            <p>This is the content of column 1.</p>
+            <!-- <h5 class="footer-heading">Column 1</h5>
+            <p>This is the content of column 1.</p> -->
           </div>
           <div class="col-md-4 footer-column">
-            <h5 class="footer-heading">Column 2</h5>
-            <p>This is the content of column 2.</p>
+            <!-- <h5 class="footer-heading">Column 2</h5>
+            <p>This is the content of column 2.</p> -->
           </div>
           <div class="col-md-4 footer-column">
             <h5 class="footer-heading">Contact Details</h5>
-            <p>123 Street Name, City, Country</p>
-            <p>Email: example@example.com</p>
-            <p>Phone: +1234567890</p>
+            <!-- <p>123 Street Name, City, Country</p> -->
+            <!-- <p>Email: example@example.com</p> -->
+            <p>Phone: 6300639598</p>
             <!-- Add Google Maps iframe here -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387571.637112618!2d-74.25987539999999!3d40.6976701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250d5b26cfc31%3A0x9fc49a6c9b32f4e7!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2suk!4v1649159860386!5m2!1sen!2suk" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385678.0963026325!2d78.55534123175265!3d17.398974988947163!2m3!1f324.49642984210055!2f10.996744319344096!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbee2e814d0b7b%3A0x5997d4c2142ecb76!2s17%C2%B024'10.6%22N%2078%C2%B034'28.3%22E!5e0!3m2!1sen!2sin!4v1614862678995!5m2!1sen!2sin"
+              width="300"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </div>
     </footer>
-    
-    <script src="script.js"></script>
+
+    <!-- <script src="script.js"></script> -->
     <script>
-      document.getElementById('contactForm').addEventListener('submit', function(event) {
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
           event.preventDefault(); // Prevent the form from submitting normally
-      
+
           // Get form data
           const formData = new FormData(this);
-      
+
           // Convert form data to JSON object
           const jsonObject = {};
           formData.forEach((value, key) => {
-              jsonObject[key] = value;
+            jsonObject[key] = value;
           });
-      
+
           // Send POST request to Node.js server
-          fetch('http://localhost:3000/send_email', {
-              method: 'POST',
-              headers: {
-                  'Content-Type': 'application/json'
-              },
-              body: JSON.stringify(jsonObject)
+          fetch("http://localhost:3000/send_email", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(jsonObject),
           })
-          .then(response => response.text())
-          .then(data => {
+            .then((response) => response.text())
+            .then((data) => {
               console.log(data); // Log response from server
               alert(data); // Show response message
-          })
-          .catch(error => {
-              console.error('Error:', error);
-              alert('Failed to send email.'); // Show error message
-          });
-      });
-      </script>
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              alert("Failed to send email."); // Show error message
+            });
+        });
+    </script>
+<script>
+  document.querySelectorAll('.navbar-nav a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const target = document.querySelector(this.getAttribute("href"));
+
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth"
+        });
+      }
+    });
+  });
+</script>
+
   </body>
 </html>

@@ -69,4 +69,17 @@ app.post("/send_email", (req, res) => {
 //     });
 // });
 
+document.querySelectorAll('.navbar-nav a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const target = document.querySelector(this.getAttribute('href'));
+
+      target.scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
+
 app.listen(port, () => console.log(`Server running on port ${port}`));
